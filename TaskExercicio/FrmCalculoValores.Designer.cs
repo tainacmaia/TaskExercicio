@@ -41,8 +41,6 @@
             this.ltbValor.Name = "ltbValor";
             this.ltbValor.Size = new System.Drawing.Size(241, 64);
             this.ltbValor.TabIndex = 0;
-            this.ltbValor.SelectedIndexChanged += new System.EventHandler(this.ltbValor_SelectedIndexChanged);
-            // 
             // btnCalcular
             // 
             this.btnCalcular.Location = new System.Drawing.Point(92, 92);
@@ -73,7 +71,6 @@
             this.Name = "frmCalculoValores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cálculo de Valores";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
