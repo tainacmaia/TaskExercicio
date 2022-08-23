@@ -25,10 +25,17 @@ namespace TaskExercicio
             ltbValor.Items.Clear();
             lblAguardar.Text = "Realizando os cálculos...\nPor favor aguarde.";
             btnCalcular.Enabled = false;
-            await FolhaPagamento();
-            await Impostos();
-            await Despesas();
-            await Receitas();
+
+            var task1 = FolhaPagamento();
+            var task2 = Impostos();
+            var task3 = Despesas();
+            var task4 = Receitas();
+
+            await task1;
+            await task2;
+            await task3;
+            await task4;
+
             lblAguardar.Text = $"Fim dos cálculos.\nTempo gasto: {Math.Round((double)stopwatch.ElapsedMilliseconds/1000,2)} segundos";
             btnCalcular.Enabled = true;
         }
