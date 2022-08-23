@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.ltbValor = new System.Windows.Forms.ListBox();
-            this.lblValores = new System.Windows.Forms.Label();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.lblAguardar = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -38,21 +37,11 @@
             // 
             this.ltbValor.FormattingEnabled = true;
             this.ltbValor.ItemHeight = 15;
-            this.ltbValor.Location = new System.Drawing.Point(156, 22);
+            this.ltbValor.Location = new System.Drawing.Point(34, 22);
             this.ltbValor.Name = "ltbValor";
-            this.ltbValor.Size = new System.Drawing.Size(119, 64);
+            this.ltbValor.Size = new System.Drawing.Size(241, 64);
             this.ltbValor.TabIndex = 0;
             this.ltbValor.SelectedIndexChanged += new System.EventHandler(this.ltbValor_SelectedIndexChanged);
-            // 
-            // lblValores
-            // 
-            this.lblValores.AutoSize = true;
-            this.lblValores.Location = new System.Drawing.Point(26, 22);
-            this.lblValores.Name = "lblValores";
-            this.lblValores.Size = new System.Drawing.Size(119, 60);
-            this.lblValores.TabIndex = 1;
-            this.lblValores.Text = "Folha de pagamento:\r\nImpostos:\r\nReceitas:\r\nDespesas:";
-            this.lblValores.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // btnCalcular
             // 
@@ -80,21 +69,18 @@
             this.ClientSize = new System.Drawing.Size(307, 174);
             this.Controls.Add(this.lblAguardar);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.lblValores);
             this.Controls.Add(this.ltbValor);
             this.Name = "frmCalculoValores";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cálculo de Valores";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private ListBox ltbValor;
-        private Label lblValores;
         private Button btnCalcular;
         private Label lblAguardar;
     }

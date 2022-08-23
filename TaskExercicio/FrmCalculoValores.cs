@@ -43,25 +43,25 @@ namespace TaskExercicio
         private async Task FolhaPagamento()
         {
             await Task.Delay(TimeSpan.FromSeconds(2));
-            ltbValor.Items.Add("R$ 5.000,00");
+            ltbValor.Items.Add("Folha de Pagamento - R$ 5.000,00");
         }
 
         private async Task Impostos()
         {
             await Task.Delay(TimeSpan.FromSeconds(2));
-            ltbValor.Items.Add("R$ 300,00");
+            ltbValor.Items.Add("Impostos - R$ 300,00");
         }
 
         private async Task Receitas()
         {
             await Task.Delay(TimeSpan.FromSeconds(2));
-            ltbValor.Items.Add("R$ 8.000,00");
+            ltbValor.Items.Add("Receitas - R$ 8.000,00");
         }
 
         private async Task Despesas()
         {
             await Task.Delay(TimeSpan.FromSeconds(2));
-            ltbValor.Items.Add("R$ 7.000,00");
+            ltbValor.Items.Add("Despesas - R$ 7.000,00");
         }
     }
 }
